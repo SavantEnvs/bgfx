@@ -1,0 +1,8 @@
+project: savantenvs/bgfx
+target: fuzz_image_container
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_image_container/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_image_container
+    libfuzzer: true
